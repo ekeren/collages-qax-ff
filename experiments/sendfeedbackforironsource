@@ -1,8 +1,6 @@
 name: send feedback for iron source
 description: ''
-labels:
-  - gradual
-  - nice to have
+labels: []
 seed: 7bc5dcb729a918b3
 stickinessProperty: rox.distinct_id
 platforms:
