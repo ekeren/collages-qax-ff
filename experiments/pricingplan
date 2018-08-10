@@ -10,9 +10,9 @@ platforms:
             - option: Med
               value: 0
             - option: Low
-              value: 0
-            - option: High
               value: 1
+            - option: High
+              value: 0
             - option: Free
               value: 0
           flag: []
