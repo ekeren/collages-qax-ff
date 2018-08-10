@@ -1,0 +1,9 @@
+name: All users
+description: ''
+jsCondition:
+  operands:
+    - operands:
+        - Company
+      operator: property
+    - efds
+  operator: eq
