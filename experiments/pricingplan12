@@ -1,0 +1,25 @@
+name: pricing plan 12
+description: ''
+labels: []
+seed: c06f729effa2a978
+stickinessProperty: rox.distinct_id
+platforms:
+  - deploymentConfiguration:
+      targeting:
+        - weight:
+            - option: Med
+              value: 0
+            - option: Low
+              value: 1
+            - option: High
+              value: 0
+            - option: Free
+              value: 0
+          flag: []
+          groupLogicGate: or
+          group:
+            - All Users
+          type: all
+    flag:
+      name: pricingPlan12
+      platform: iOS
