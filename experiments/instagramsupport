@@ -1,0 +1,21 @@
+name: instagram support
+description: ''
+labels: []
+seed: 0f8d183261072194
+stickinessProperty: rox.distinct_id
+platforms:
+  - deploymentConfiguration:
+      targeting:
+        - weight:
+            - value: 0
+              option: 'true'
+            - value: 1
+              option: 'false'
+          flag: []
+          groupLogicGate: or
+          group:
+            - All Users
+          type: all
+    flag:
+      name: instagramSupport
+      platform: iOS
