@@ -1,0 +1,35 @@
+name: send feedback for iron source
+description: ''
+labels:
+  - gradual
+  - nice to have
+seed: 7bc5dcb729a918b3
+stickinessProperty: rox.distinct_id
+platforms:
+  - deploymentConfiguration:
+      targeting:
+        - weight:
+            - option: 'true'
+              value: 0
+            - option: 'false'
+              value: 1
+          flag:
+            - value: 'true'
+              name: instagramSupport
+          groupLogicGate: or
+          group:
+            - Internal employess
+          type: group
+        - weight:
+            - option: 'true'
+              value: 0
+            - option: 'false'
+              value: 1
+          flag: []
+          groupLogicGate: or
+          group:
+            - All Users
+          type: all
+    flag:
+      name: sendFeedbackForIronSource
+      platform: iOS
