@@ -1,0 +1,9 @@
+name: Internal employess
+description: ''
+jsCondition:
+  operator: eq
+  operands:
+    - operator: property
+      operands:
+        - email
+    - eyal1
