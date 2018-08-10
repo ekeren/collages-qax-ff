@@ -1,0 +1,10 @@
+name: English users
+description: ''
+jsCondition:
+  operator: inArray
+  operands:
+    - operator: property
+      operands:
+        - Country
+    - - UK
+      - US
