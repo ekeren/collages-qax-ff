@@ -1,0 +1,21 @@
+name: send feedback
+description: ''
+labels: []
+seed: 25ddc386e3e8b97b
+stickinessProperty: rox.distinct_id
+platforms:
+  - deploymentConfiguration:
+      targeting:
+        - weight:
+            - option: 'true'
+              value: 1
+            - option: 'false'
+              value: 0
+          flag: []
+          groupLogicGate: or
+          group:
+            - All Users
+          type: all
+    flag:
+      name: sendFeedback
+      platform: iOS
