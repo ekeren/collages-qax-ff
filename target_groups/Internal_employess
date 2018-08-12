@@ -1,9 +1,10 @@
 name: Internal employess
 description: ''
 jsCondition:
-  operator: eq
+  operator: inArray
   operands:
     - operator: property
       operands:
         - email
-    - eyal1
+    - - eyal1
+      - erez
